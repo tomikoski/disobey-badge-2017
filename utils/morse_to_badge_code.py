@@ -9,7 +9,11 @@ word_delay="worddelay();" # not implemented
 # https://morsecodetranslator.com/
 
 def convert_to_c_code(msg):
+   wraplines = 0
    for c in msg:
+      wraplines+=1
+      if(wraplines % 6 == 0):
+        print()
       match c:
         case '-':
           print(dash_func, end='')
