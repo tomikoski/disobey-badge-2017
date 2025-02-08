@@ -29,7 +29,7 @@ def convert_from_c_code(msg):
         case 't': # dot();
           print(".", end='')
         case 'a': # chardelay();
-             print("", end='')
+             print(" ", end='')
         case 'r': # worddelay(); 
              print(" / ", end='')
     print("\n")
